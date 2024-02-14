@@ -8,23 +8,23 @@
 {{else if eq .Business.Status "rejected"}}
 <div class="ui negative message">
         <div class="header">Your application to be listed in the directory has not been accepted.</div>
-    <p>Please contact us by email to find out why: hello@opencredit.network</p>
+    <p>Please contact us by email to find out why: hello@acloudbank.com</p>
 </div>
 {{else if eq .Business.Status "tradingPending"}}
     <div class="ui yellow message">
         <div class="header">Thank you for applying to become a Trading Member.</div>
-        <p>We will review your application within the next business day, and if everything looks good your business will become a Trading Member of the Open Credit Network.</p>
+        <p>We will review your application within the next business day, and if everything looks good your business will become a Trading Member of the Mutual Crediting Network.</p>
     </div>
 {{else if eq .Business.Status "tradingRejected"}}
     <div class="ui negative message">
         <div class="header">Your application to become a Trading Member has not been accepted.</div>
-        <p>Please contact us by email to find out why: hello@opencredit.network</p>
+        <p>Please contact us by email to find out why: hello@acloudbank.com</p>
     </div>
 {{else if eq .Business.Status "accepted"}}
     <div class="ui success message">
         <h4>Upgrade to a full Trading Member</h4>
-        <p>Unlock the full potential of the Open Credit Network by applying to become a Trading Member.</p>
-        <p>Trading via mutual credit is FREE during our alpha release and, if your business meets the application criteria, you will be awarded an interest free line of credit allowing you to trade with other businesses straight away. <a href="https://opencredit.network/become-a-trading-member/" target="_blank">Find out more</a> and <a href="/member-signup">apply now</a>.</p>
+        <p>Unlock the full potential of the Mutual Crediting Network by applying to become a Trading Member.</p>
+        <p>Trading via mutual credit is FREE during our alpha release and, if your business meets the application criteria, you will be awarded an interest free line of credit allowing you to trade with other businesses straight away. <a href="https://acloudbank.com/" target="_blank">Find out more</a> and <a href="/member-signup">apply now</a>.</p>
     </div>
 {{end}}
 <h1 class="ui primary header">Dashboard</h1>
@@ -34,7 +34,7 @@
             {{if ShouldDisplayTime .User.LastLoginDate}}
                 <h2 style="margin-bottom: 0px;">Welcome back, {{.Business.BusinessName}}</h2>
             {{ else }}
-                <h2>Welcome to the Open Credit Network, {{.Business.BusinessName}}</h2>
+                <h2>Welcome to the Mutual Crediting Network, {{.Business.BusinessName}}</h2>
             {{ end }}
         </div>
         {{if eq .Business.Status "tradingAccepted"}}
